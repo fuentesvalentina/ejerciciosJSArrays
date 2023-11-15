@@ -7,11 +7,12 @@ la creación de la tabla debe ser realizada con una función y
  function mostrarTablaMultiplicar(numero) {
     document.write("<h2>Tabla de Multiplicar del " + numero + "</h2>");
     document.write("<table border='1'>");
-    document.write("<tr><th>Multiplicador</th><th>Resultado</th></tr>");
+    document.write("<tr><th>Multiplicación</th><th>Resultado</th></tr>");
 
     for (let i = 1; i <= 10; i++) {
+        const multiplicacion = numero + "x" + i;
         const resultado = numero * i;
-        document.write("<tr><td>" + i + "</td><td>" + resultado + "</td></tr>");
+        document.write("<tr><td>" + multiplicacion + "</td><td>" + resultado + "</td></tr>");
     }
 
     document.write("</table>");
